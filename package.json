@@ -1,0 +1,45 @@
+{
+  "name": "medioncoapi",
+  "version": "1.0.0",
+  "description": "MediOnco webservice 1.0",
+  "main": "app.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Nejma Moualhi",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.18.2",
+    "express-validation": "^4.1.0",
+    "faker": "^6.6.6",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.0.3",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@jest/globals": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}
